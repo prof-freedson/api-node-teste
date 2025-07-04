@@ -49,6 +49,24 @@ describe("usuarioModel", ()=>{
       
     })
 
+    // Testando a função listarUsuarioPeloId()
+    test("Deve listar somente um usuário", ()=>{
+      // Criar o usuário
+      // const usuario = usuarioModel.criarUsuario("Bernardete", "dete@email.com")
+      const usuarios = usuarioModel.listarUsuarios()
+
+      // Listar só o usuário criado
+      // acessando o id do usuário já criado
+      // const listado = usuarioModel.listarUsuarioPeloId(usuario.id)
+      const listado = usuarioModel.listarUsuarioPeloId(usuarios[0].id)
+
+      // Funções para valores obtidos e esperados
+      expect(listado).toBeDefined() // Verificar se o usuário foi criado
+      expect(listado.nome).toBe("Maria") 
+      expect(listado.email).toBe("maria@email.com") 
+      
+    })
+
 })
 
 
