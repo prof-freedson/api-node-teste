@@ -13,6 +13,8 @@
 - os arquivos de testes serão criados e escritos os scripts de testes (códigos)
 
 4) Executar os arquivos de testes no Terminal:
-- npm t
 - npm test
+
+OBS: há outros comandos de execução de testes:
+- npm t
 - npm run test
